@@ -33,15 +33,15 @@ class MainActivity : AppCompatActivity() {
                 return true
             }
             R.id.Linked_devices -> {
-                Toast.makeText(this, "Linked Devices click", Toast.LENGTH_LONG).show()
+                goToNewGroupActivity3()
                 return true
             }
             R.id.starred_messages -> {
-                Toast.makeText(this, "Starred Messages click", Toast.LENGTH_LONG).show()
+                goToNewGroupActivity4()
                 return true
             }
             R.id.settings -> {
-            Toast.makeText(this, "Settings click", Toast.LENGTH_LONG).show()
+            goToNewGroupActivity5()
                 return true
             }
             else -> {
@@ -55,6 +55,18 @@ class MainActivity : AppCompatActivity() {
     }
     private fun goToNewGroupActivity2(){
         val i = Intent(this, NewGroupActivity2::class.java)
+        startActivity(i)
+    }
+    private fun goToNewGroupActivity3(){
+        val i = Intent(this, NewGroupActivity3::class.java)
+        startActivity(i)
+    }
+    private fun goToNewGroupActivity4(){
+        val i = Intent(this, NewGroupActivity4::class.java)
+        startActivity(i)
+    }
+    private fun goToNewGroupActivity5(){
+        val i = Intent(this, NewGroupActivity5::class.java)
         startActivity(i)
     }
 }
