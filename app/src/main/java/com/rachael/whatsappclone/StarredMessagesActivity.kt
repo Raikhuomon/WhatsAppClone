@@ -3,9 +3,9 @@ package com.rachael.whatsappclone
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class NewGroupActivity5 : AppCompatActivity() {
+class StarredMessagesActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_new_group5)
+        setContentView(R.layout.activity_starred_messages)
     }
 }

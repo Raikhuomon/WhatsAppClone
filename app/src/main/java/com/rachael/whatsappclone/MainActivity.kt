@@ -29,19 +29,19 @@ class MainActivity : AppCompatActivity() {
                 return true
             }
             R.id.new_broadcast -> {
-                goToNewGroupActivity2()
+                goToNewBroadcastActivity()
                 return true
             }
             R.id.Linked_devices -> {
-                goToNewGroupActivity3()
+                goToLinkedDevicesActivity()
                 return true
             }
             R.id.starred_messages -> {
-                goToNewGroupActivity4()
+                goToStarredMessagesActivity()
                 return true
             }
             R.id.settings -> {
-            goToNewGroupActivity5()
+            goToSettingsActivity()
                 return true
             }
             else -> {
@@ -53,20 +53,20 @@ class MainActivity : AppCompatActivity() {
         val i = Intent(this, NewGroupActivity::class.java)
         startActivity(i)
     }
-    private fun goToNewGroupActivity2(){
-        val i = Intent(this, NewGroupActivity2::class.java)
+    private fun goToNewBroadcastActivity(){
+        val i = Intent(this, NewBroadcastActivity::class.java)
         startActivity(i)
     }
-    private fun goToNewGroupActivity3(){
-        val i = Intent(this, NewGroupActivity3::class.java)
+    private fun goToLinkedDevicesActivity(){
+        val i = Intent(this, LinkedDevicesActivity::class.java)
         startActivity(i)
     }
-    private fun goToNewGroupActivity4(){
-        val i = Intent(this, NewGroupActivity4::class.java)
+    private fun goToStarredMessagesActivity(){
+        val i = Intent(this, StarredMessagesActivity::class.java)
         startActivity(i)
     }
-    private fun goToNewGroupActivity5(){
-        val i = Intent(this, NewGroupActivity5::class.java)
+    private fun goToSettingsActivity(){
+        val i = Intent(this, SettingsActivity::class.java)
         startActivity(i)
     }
 }
